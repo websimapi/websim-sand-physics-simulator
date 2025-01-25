@@ -26,7 +26,7 @@ body {
   touch-action: none;
 }
 
-#noSupport {
+#noSupport, #startPrompt {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -35,4 +35,33 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+#startPrompt {
+  font-size: 24px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+#startPrompt small {
+  font-size: 14px;
+  opacity: 0.8;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Fullscreen styles */
+:fullscreen {
+  background: black;
+}
+
+:-webkit-full-screen {
+  background: black;
+}
+
+:-moz-full-screen {
+  background: black;
 }
